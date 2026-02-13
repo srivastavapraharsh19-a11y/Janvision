@@ -27,17 +27,19 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function startScreening() {
-    const btn = document.querySelector('.btn-primary');
-    const originalText = btn.innerHTML;
+    alert("⚠️ SYSTEM NOTICE\n\nThe AI Backend is currently being connected to the server.\nPlease check back later for the live screening module.");
+    return;
+    // const btn = document.querySelector('.btn-primary');
+    // const originalText = btn.innerHTML;
     
-    btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Loading...';
-    btn.style.opacity = '0.8';
+    // btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Loading...';
+    // btn.style.opacity = '0.8';
     
-    setTimeout(() => {
-        alert("Redirecting to AI Screening Module...");
-        btn.innerHTML = originalText;
-        btn.style.opacity = '1';
-    }, 1000);
+    // setTimeout(() => {
+    //     alert("Redirecting to AI Screening Module...");
+    //     btn.innerHTML = originalText;
+    //     btn.style.opacity = '1';
+    // }, 1000);
 }
 
 // Function to simulate a hospital setting their details
