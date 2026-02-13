@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JanVision - Digital Ocular Health</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="brand-govt">
+                <i class="fa-solid fa-building-columns"></i> Atmanirbhar Bharat
+            </div>
+            <div class="top-actions">
+                <button class="skip-btn">SKIP TO MAIN CONTENT</button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-language"></i>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <i class="fa-regular fa-eye"></i>
+                </div>
+                <div class="logo-text">
+                    <h2>JanVision</h2>
+                </div>
+            </div>
+
+            <nav class="desktop-nav">
+                <a href="#" class="active"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#"><i class="fa-solid fa-chart-simple"></i> Reports</a>
+                <a href="#"><i class="fa-solid fa-hospital"></i> Clinics</a>
+                <a href="#"><i class="fa-regular fa-user"></i> Profile</a>
+            </nav>
+
+            <div class="digital-india-logo">
+                <div class="di-text">
+                    <small>DIGITAL INDIA</small>
+                    <small>INITIATIVE</small>
+                </div>
+                <i class="fa-solid fa-microscope"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="hospital-context-bar">
+        <div class="container context-content">
+            <div class="hospital-details">
+                <div class="detail-item">
+                    <i class="fa-solid fa-hospital"></i>
+                    <span id="hospital-name">District Civil Hospital</span>
+                </div>
+                <div class="detail-divider">|</div>
+                <div class="detail-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span id="hospital-location">Indore, Madhya Pradesh</span>
+                </div>
+            </div>
+            <button class="edit-hospital-btn" onclick="editHospitalDetails()">
+                <i class="fa-solid fa-pen-to-square"></i> Change Details
+            </button>
+        </div>
+    </div>
+
+    <main class="hero-section">
+        <div class="container hero-container">
+            
+            <div class="badge">
+                <i class="fa-solid fa-earth-asia"></i> GOVERNMENT OF INDIA INITIATIVE
+            </div>
+
+            <div class="title-wrapper">
+                <h1 class="main-title">JanVision</h1>
+                <div class="background-eye">
+                    <i class="fa-regular fa-eye"></i>
+                </div>
+            </div>
+
+            <h2 class="sub-title">Digital Ocular Health Management Portal</h2>
+
+            <div class="acronym-box">
+                <p class="acronym-text">
+                    <span class="highlight">V</span>isual 
+                    <span class="highlight">A</span>nalytics 
+                    <span class="highlight">S</span>ystem 
+                    <span class="highlight">U</span>nder 
+                    <span class="highlight">D</span>igital 
+                    <span class="highlight">H</span>ealth 
+                    <span class="highlight">A</span>lliance
+                </p>
+            </div>
+
+            <p class="description">
+                A comprehensive digital platform for <strong>Corneal Stability monitoring</strong> and <strong>Early Keratoconus Detection</strong>, ensuring vision safety and clinical precision.
+            </p>
+
+            <div class="action-buttons">
+                <button class="btn btn-primary" onclick="startScreening()">
+                    Start Screening <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <button class="btn btn-secondary">
+                    Professional Portal
+                </button>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-circle">
+                        <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <h3>AI Detection</h3>
+                    <p>Automated keratoconus screening</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon-circle">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </div>
+                    <h3>Stability Tracking</h3>
+                    <p>Monitor corneal changes over time</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+# Mac System files
+.DS_Store
+
+# Windows System files
+Thumbs.db
+
+# VS Code settings (optional, but good for personal settings)
+.vscode/
+
+# Node modules (if you install libraries later)
+node_modules/
+
+# Log files
+*.log
+
+# Python build & cache files (Don't upload these!)
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Virtual Environment (If your 'janvision_env' folder is inside this folder)
+janvision_env/
+venv/

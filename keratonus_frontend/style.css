@@ -1,0 +1,108 @@
+/* Variables for Branding - Blue Theme */
+:root {
+    --primary-blue: #1E88E5;
+    --dark-blue: #1565C0;
+    --light-blue-bg: #e3f2fd;
+    --border-blue: #bbdefb;
+    --text-dark: #1a1a1a;
+    --text-grey: #555;
+    --bg-light: #f8fbf9;
+    --white: #ffffff;
+    --top-bar-bg: #0d47a1;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+body { background-color: var(--bg-light); color: var(--text-dark); }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* Top Bar */
+.top-bar { background-color: var(--top-bar-bg); color: var(--white); padding: 8px 0; font-size: 14px; }
+.top-bar-content { display: flex; justify-content: space-between; align-items: center; }
+.skip-btn { background: #FFCA28; color: #333; border: none; padding: 4px 10px; border-radius: 4px; font-size: 10px; font-weight: bold; cursor: pointer; margin-right: 15px; }
+.top-actions i { margin-left: 15px; cursor: pointer; }
+
+/* Header */
+.main-header { background: var(--white); padding: 15px 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.02); }
+.header-content { display: flex; justify-content: space-between; align-items: center; }
+.logo-area { display: flex; align-items: center; gap: 12px; }
+.logo-icon { width: 45px; height: 45px; background: var(--light-blue-bg); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-blue); font-size: 20px; border: 1px solid var(--border-blue); }
+.logo-text h2 { font-size: 20px; font-weight: 700; line-height: 1; color: var(--dark-blue); }
+.desktop-nav { display: flex; gap: 30px; }
+.desktop-nav a { text-decoration: none; color: var(--text-grey); font-weight: 500; font-size: 15px; display: flex; align-items: center; gap: 8px; transition: 0.3s; }
+.desktop-nav a:hover, .desktop-nav a.active { color: var(--primary-blue); }
+.digital-india-logo { display: flex; align-items: center; gap: 8px; color: var(--text-grey); border-left: 1px solid #eee; padding-left: 20px; }
+.di-text { display: flex; flex-direction: column; text-align: right; font-size: 10px; font-weight: 600; }
+
+/* Context Bar */
+.hospital-context-bar { background-color: #ebf5ff; border-bottom: 1px solid #d1e9fc; padding: 10px 0; margin-bottom: 20px; }
+.context-content { display: flex; justify-content: space-between; align-items: center; }
+.hospital-details { display: flex; align-items: center; gap: 15px; color: var(--dark-blue); font-size: 14px; font-weight: 600; }
+.detail-item { display: flex; align-items: center; gap: 8px; }
+.detail-divider { color: #cbd5e1; }
+.edit-hospital-btn { background: transparent; border: 1px solid var(--primary-blue); color: var(--primary-blue); padding: 4px 12px; border-radius: 4px; font-size: 12px; cursor: pointer; transition: 0.2s; }
+.edit-hospital-btn:hover { background: var(--primary-blue); color: white; }
+
+/* Hero Section */
+.hero-section { padding: 40px 0 60px; text-align: center; }
+.hero-container { max-width: 800px; display: flex; flex-direction: column; align-items: center; }
+.badge { display: inline-flex; align-items: center; gap: 8px; background-color: var(--light-blue-bg); color: var(--dark-blue); padding: 8px 20px; border-radius: 50px; font-size: 12px; font-weight: 700; border: 1px solid var(--border-blue); margin-bottom: 30px; }
+
+/* --- NEW TITLE LAYERING --- */
+.title-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.main-title {
+    color: var(--primary-blue);
+    font-size: 4rem;
+    font-weight: 800;
+    position: relative;
+    z-index: 2; /* Text sits on top */
+}
+
+.background-eye {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Icon sits behind */
+    color: var(--primary-blue);
+    font-size: 160px; /* Massive size to encompass the text */
+    opacity: 0.08; /* Very transparent so text is readable */
+    pointer-events: none; /* Allows clicking through to text if needed */
+}
+
+.sub-title { font-size: 1.5rem; color: #111; margin-bottom: 20px; position: relative; z-index: 2; }
+.acronym-box { margin-bottom: 25px; position: relative; z-index: 2; }
+.acronym-text { font-size: 1.2rem; color: var(--primary-blue); font-weight: 500; }
+.acronym-text .highlight { font-weight: 800; font-size: 1.3rem; }
+.description { color: var(--text-grey); line-height: 1.6; margin-bottom: 40px; font-size: 1.1rem; max-width: 90%; position: relative; z-index: 2;}
+
+/* Buttons & Grid */
+.action-buttons { display: flex; gap: 20px; margin-bottom: 60px; width: 100%; justify-content: center; position: relative; z-index: 2; }
+.btn { padding: 16px 32px; border-radius: 12px; font-size: 16px; font-weight: 600; cursor: pointer; transition: transform 0.2s; border: none; display: flex; align-items: center; gap: 10px; }
+.btn:active { transform: scale(0.98); }
+.btn-primary { background-color: var(--primary-blue); color: white; box-shadow: 0 4px 15px rgba(30, 136, 229, 0.4); }
+.btn-primary:hover { background-color: var(--dark-blue); }
+.btn-secondary { background-color: white; color: #333; border: 1px solid #ddd; }
+.features-grid { display: flex; gap: 30px; width: 100%; justify-content: center; position: relative; z-index: 2;}
+.feature-card { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); flex: 1; max-width: 350px; text-align: center; border: 1px solid #f0f0f0; transition: transform 0.3s ease; }
+.feature-card:hover { transform: translateY(-5px); border-color: var(--primary-blue); }
+.icon-circle { width: 50px; height: 50px; margin: 0 auto 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; }
+.feature-card:first-child .icon-circle { background-color: var(--light-blue-bg); color: var(--primary-blue); }
+.feature-card:last-child .icon-circle { background-color: #e3f2fd; color: var(--dark-blue); }
+.feature-card h3 { font-size: 18px; margin-bottom: 8px; }
+.feature-card p { font-size: 14px; color: var(--text-grey); }
+
+/* Mobile */
+@media (max-width: 768px) {
+    .desktop-nav { display: none; }
+    .features-grid { flex-direction: column; align-items: center; }
+    .action-buttons { flex-direction: column; }
+    .main-title { font-size: 2.5rem; }
+    .background-eye { font-size: 100px; } /* Adjust background size for mobile */
+    .context-content { flex-direction: column; gap: 10px; align-items: flex-start; }
+}
