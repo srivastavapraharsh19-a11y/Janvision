@@ -1,0 +1,7 @@
+names:
+  0: Keratoconus
+  1: Normal
+  2: Suspect
+path: C:/Users/praha/Downloads/JanVision_2.ipynb/janvision_dataset/janvision_dataset
+train: C:/Users/praha/Downloads/JanVision_2.ipynb/janvision_dataset/janvision_dataset\images\train
+val: C:/Users/praha/Downloads/JanVision_2.ipynb/janvision_dataset/janvision_dataset\images\val
